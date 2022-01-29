@@ -1,9 +1,11 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/pages/HomeComponent";
-import Login from "./components/pages/LoginComponent";
+// import Login from "./components/pages/LoginComponent";
+import Login from "pages/Login"
 import Register from "./components/pages/RegisterComponent";
 import Profile from "./components/pages/ProfileComponent";
+import Text from "components/pages/test"
 import PrivateRoute from "./PrivateRoute";
 import { Guard, ProtectedRoute } from "./Guard";
 import Header from "./components/layouts/Header";
@@ -14,7 +16,8 @@ function Switch() {
       <Header />
       <Routes>
         <Route exact path="/" render={(props) => <Navigate to={{ pathname: "/home" }} />} />
-        <Route path="/home" element={Home} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/test" element={<Text />} />
         <Route path="/user/login" element={<Login />} />
         <Route path="/user/register" element={<Register />} />
         {/*Redirect if not authenticated */}
