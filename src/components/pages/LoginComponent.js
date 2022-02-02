@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Button, TextField, Card } from "@material-ui/core";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import { useStyles } from "../../styles/styles";
+// import { Button, TextField, Card } from "@material-ui/core";
+// import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+// import { useStyles } from "../../styles/styles";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginAction } from "../../redux/actions/AuthActions";
 import { useNavigate, Link } from "react-router-dom";
@@ -10,7 +10,7 @@ import { useNavigate, Link } from "react-router-dom";
 function LoginComponent() {
   const history = useNavigate();
   //console.log(history);
-  const classes = useStyles();
+  // const classes = useStyles();
   const dispatch = useDispatch();
   //const authResponse = useSelector(state=>state.userAuth.authResponse);
   const [fields, setState] = useState({
@@ -30,7 +30,7 @@ function LoginComponent() {
   };
   return (
     <div>
-      <div className={classes.centerItem}>
+      {/* <div className={classes.centerItem}>
         <Card>
           <h2>
             <b>Welcome to User Login Page</b>
@@ -79,7 +79,7 @@ function LoginComponent() {
             </div>
           </form>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }

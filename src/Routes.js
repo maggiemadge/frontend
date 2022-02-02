@@ -5,18 +5,19 @@ import Home from "./components/pages/HomeComponent";
 import Login from "pages/Login"
 import Register from "./components/pages/RegisterComponent";
 import Profile from "./components/pages/ProfileComponent";
-import Text from "components/pages/test"
-import PrivateRoute from "./PrivateRoute";
-import { Guard, ProtectedRoute } from "./Guard";
-import Header from "./components/layouts/Header";
+import Text from "components/pages/test";
+// import Page404 from "pages/404";
+// import PrivateRoute from "./PrivateRoute";
+import { ProtectedRoute } from "./Guard";
+// import Header from "./components/layouts/Header";
 
 function Switch() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
-        <Route exact path="/" render={(props) => <Navigate to={{ pathname: "/home" }} />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route exact path="/" render={(props) => <Navigate to={{ pathname: "/home" }} />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/test" element={<Text />} />
         <Route path="/user/login" element={<Login />} />
         <Route path="/user/register" element={<Register />} />
@@ -26,6 +27,7 @@ function Switch() {
           <Route exact path="/user" render={(props) => <Navigate to={{ pathname: `${props.match.path}/view-profile` }} />} />
         </Route>
         {/* <Guard path="/user" token="user-token" routeRedirect="/user/login" component={PrivateRoute} /> */}
+        {/* <Route element={<Page404 />} /> */}
       </Routes>
     </>
   );

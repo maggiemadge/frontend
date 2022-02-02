@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Button, TextField, Card } from "@material-ui/core";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import { useStyles } from "../../styles/styles";
+// import { Button, TextField, Card } from "@material-ui/core";
+// import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+// import { useStyles } from "../../styles/styles";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { RegisterAction } from "../../redux/actions/AuthActions";
 
 
 function RegisterComponent() {
-  const classes = useStyles();
+  // const classes = useStyles();
   const dispatch = useDispatch();
   //const authResponse = useSelector(state=>state.userAuth.authResponse);
   const [fields, setState] = useState({
@@ -38,7 +38,7 @@ function RegisterComponent() {
   };
   return (
     <div>
-      <div className={classes.centerItem}>
+      {/* <div className={classes.centerItem}>
         <Card>
           <h2>
             <b>Welcome to Register User Page</b>
@@ -113,7 +113,7 @@ function RegisterComponent() {
             </div>
           </form>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }

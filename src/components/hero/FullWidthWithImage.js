@@ -31,10 +31,10 @@ const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-lg lg:text-base xl:
 const Actions = styled.div`
   ${tw`mb-8 lg:mb-0`}
   .action {
-    ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:shadow-outline transition duration-300`}
+    ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:shadow transition duration-300`}
   }
   .primaryAction {
-    ${tw`bg-primary-500 text-gray-100 hover:bg-primary-700`}
+    ${tw`bg-indigo-500 text-gray-100 hover:bg-indigo-700`}
   }
   .secondaryAction {
     ${tw`mt-4 sm:mt-0 sm:ml-4 bg-gray-300 text-gray-700 hover:bg-gray-400 hover:text-gray-800`}
@@ -55,7 +55,7 @@ const Hero = ({
       Find Perfect Hotels
       <wbr />
       <br />
-      <span tw="text-primary-500">anywhere you go.</span>
+      <span tw="text-blue-500">anywhere you go.</span>
     </>
   ),
   description = "We've been in the hotels business across the world for 5 years now. We assure you that you will always enjoy your stay with us.",
