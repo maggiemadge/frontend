@@ -35,11 +35,11 @@ const Card = styled.a`
   }
 
   .description {
-    ${tw`mt-4 text-sm font-medium text-secondary-300`}
+    ${tw`mt-4 text-sm font-medium text-blue-300`}
   }
 
   .link {
-    ${tw`mt-auto inline-flex items-center pt-5 text-sm font-bold text-primary-300 leading-none hocus:text-primary-900 transition duration-300`}
+    ${tw`mt-auto inline-flex items-center pt-5 text-sm font-bold text-indigo-300 leading-none hocus:text-indigo-900 transition duration-300`}
     .icon {
       ${tw`ml-2 w-4`}
     }

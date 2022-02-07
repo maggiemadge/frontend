@@ -20,7 +20,7 @@ const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-1/3 mt-16 xl:mt-0`;
 
 const HeadingInfoContainer = tw.div`text-center xl:text-left max-w-lg xl:max-w-none mx-auto xl:mx-0`;
 const HeadingTitle = tw(SectionHeading)`xl:text-left leading-tight`;
-const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
+const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-blue-100 mt-8`;
 const PrimaryLink = styled(PrimaryLinkBase)`
   ${tw`inline-flex justify-center xl:justify-start items-center mt-8 text-lg`}
   svg {
@@ -37,7 +37,7 @@ const CardImage = styled.div(props => [
 const CardText = tw.div`mt-4`;
 
 const CardHeader = tw.div`flex justify-between items-center`;
-const CardType = tw.div`text-primary-500 font-bold text-lg`;
+const CardType = tw.div`text-indigo-500 font-bold text-lg`;
 const CardPrice = tw.div`font-semibold text-sm text-gray-600`;
 const CardPriceAmount = tw.span`font-bold text-gray-800 text-lg`;
 

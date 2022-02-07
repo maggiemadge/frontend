@@ -29,7 +29,7 @@ const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-blue-100`;
 
 const TestimonialSlider = styled(Slider)`
   ${tw`w-full mt-10 text-center md:text-left`}
@@ -53,7 +53,7 @@ const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-cente
 const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
 const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0`;
 const CustomerName = tw.h5`font-bold text-xl`;
-const CustomerTitle = tw.p`font-medium text-secondary-100`;
+const CustomerTitle = tw.p`font-medium text-blue-100`;
 
 const Controls = styled.div`
   ${tw`flex mt-8 sm:mt-0`}
@@ -62,7 +62,7 @@ const Controls = styled.div`
   }
 `;
 const ControlButton = styled.button`
-  ${tw`mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline`}
+  ${tw`mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-indigo-500 hover:text-indigo-700 focus:outline-none focus:shadow`}
   svg {
     ${tw`w-4 h-4 stroke-3`}
   }

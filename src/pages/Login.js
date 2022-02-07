@@ -120,9 +120,9 @@ const Login = ({
             </FormContainer>
           </MainContent>
         </MainContainer>
-        <IllustrationContainer>
+        {/* <IllustrationContainer>
           <IllustrationImage imageSrc={illustrationImageSrc} />
-        </IllustrationContainer>
+        </IllustrationContainer> */}
       </Content>
     </Container>
   </AnimationRevealPage>

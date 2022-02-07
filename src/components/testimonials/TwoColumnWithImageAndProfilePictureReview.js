@@ -27,7 +27,7 @@ const TestimonialText = tw.div`outline-none`;
 const ImageAndControlContainer = tw.div`relative outline-none`;
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-144`
+  tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-14`
 ]);
 
 const ControlContainer = tw.div`absolute bottom-0 right-0 bg-gray-100 px-6 py-4 rounded-tl-3xl border`;
@@ -45,25 +45,25 @@ const TextContainer = styled.div(props => [
 
 const Subheading = tw(SubheadingBase)`mb-4`;
 const HeadingTitle = tw(SectionHeading)`lg:text-left leading-tight`;
-const Description = tw.p`max-w-md text-center mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;
+const Description = tw.p`max-w-md text-center mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-blue-100`;
 
 const QuoteContainer = tw.div`relative mt-10 lg:mt-20`;
 const Quote = tw.blockquote`text-center lg:text-left text-sm sm:text-lg lg:text-xl xl:text-2xl`;
 const CustomerInfo = tw.div`mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
 const CustomerProfilePicture = tw.img`rounded-full w-20 h-20`;
 const CustomerTextInfo = tw.div`text-center lg:text-left sm:ml-6 mt-2 sm:mt-0`;
-const CustomerName = tw.h5`font-semibold text-xl lg:text-2xl xl:text-3xl text-primary-500`;
-const CustomerTitle = tw.p`font-medium text-secondary-100`;
+const CustomerName = tw.h5`font-semibold text-xl lg:text-2xl xl:text-3xl text-indigo-500`;
+const CustomerTitle = tw.p`font-medium text-blue-100`;
 
-const QuotesLeft = tw(QuotesLeftIcon)`w-6 h-6 opacity-75 text-primary-500 inline-block mr-1 -mt-3`;
-const QuotesRight = tw(QuotesRightIcon)`w-6 h-6 opacity-75 text-primary-500 inline-block ml-1 -mt-3`;
+const QuotesLeft = tw(QuotesLeftIcon)`w-6 h-6 opacity-75 text-indigo-500 inline-block mr-1 -mt-3`;
+const QuotesRight = tw(QuotesRightIcon)`w-6 h-6 opacity-75 text-indigo-500 inline-block ml-1 -mt-3`;
 
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
-)`absolute w-32 top-0 left-0 -z-10 text-primary-500 opacity-25 transform -translate-x-full`;
+)`absolute w-32 top-0 left-0 z-10 text-indigo-500 opacity-25 transform -translate-x-full`;
 const DecoratorBlob2 = tw(
   SvgDecoratorBlob2
-)`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
+)`absolute w-32 bottom-0 right-0 z-10 text-pink-500 opacity-10 transform translate-x-2/3 translate-y-8`;
 
 export default ({
   subheading = "",

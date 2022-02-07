@@ -2,6 +2,7 @@ import React from "react";
 // import { Button } from "@material-ui/core";
 // import { useStyles } from "../../styles/styles";
 import { useNavigate } from "react-router-dom";
+import AgencyLandingPage from "demos/AgencyLandingPage";
 
 function HomeComponent() {
   const history = useNavigate();
@@ -13,13 +14,7 @@ function HomeComponent() {
 
   return (
     <>
-      {/* <div className={classes.homeRoot}>
-        <div className={classes.containerDiv}>
-          <Button variant="contained" className={classes.extraBtnStyle} onClick={(e) => gotToDashboard(e, "/user")} size="large" color="primary">
-            User Dashboard
-          </Button>
-        </div>
-      </div> */}
+      <AgencyLandingPage />
     </>
   );
 }

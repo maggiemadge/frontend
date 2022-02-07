@@ -1,8 +1,16 @@
 module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   prefix: '',
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      zIndex: {
+        '-10': '-10',
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -209,8 +217,8 @@ module.exports = {
       "2xl": '1rem',
       "3xl": '1.5rem',
       "4xl": '2.5rem',
-      "5xl":'3rem',
-      "6xl":'4.5rem',
+      "5xl": '3rem',
+      "6xl": '4.5rem',
       full: '9999px',
     },
     borderWidth: {
@@ -676,6 +684,9 @@ module.exports = {
       '700': '700ms',
       '1000': '1000ms',
     },
+
+
+
   },
   variants: {
     accessibility: ['responsive', 'focus'],

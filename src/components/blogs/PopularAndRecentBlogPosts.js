@@ -16,13 +16,13 @@ const Image = styled(motion.div)(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`h-64 bg-cover bg-center rounded`
 ]);
-const Title = tw.h5`mt-6 text-xl font-bold transition duration-300 group-hover:text-primary-500`;
-const Description = tw.p`mt-2 font-medium text-secondary-100 leading-loose text-sm`;
+const Title = tw.h5`mt-6 text-xl font-bold transition duration-300 group-hover:text-indigo-500`;
+const Description = tw.p`mt-2 font-medium text-blue-100 leading-loose text-sm`;
 const AuthorInfo = tw.div`mt-6 flex items-center`;
 const AuthorImage = tw.img`w-12 h-12 rounded-full`;
 const AuthorNameAndProfession = tw.div`ml-4`;
 const AuthorName = tw.h6`font-semibold text-lg`;
-const AuthorProfile = tw.p`text-secondary-100 text-sm`;
+const AuthorProfile = tw.p`text-blue-100 text-sm`;
 
 const RecentPostsContainer = styled.div`
   ${tw`mt-24 lg:mt-0 lg:w-1/3`}
@@ -36,7 +36,7 @@ const RecentPostsContainer = styled.div`
     ${tw`text-base xl:text-lg mt-0 mr-4 lg:max-w-xs`}
   }
   ${AuthorName} {
-    ${tw`mt-3 text-sm text-secondary-100 font-normal leading-none`}
+    ${tw`mt-3 text-sm text-blue-100 font-normal leading-none`}
   }
   ${Image} {
     ${tw`h-20 w-20 flex-shrink-0`}

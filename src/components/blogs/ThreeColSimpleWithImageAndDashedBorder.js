@@ -23,31 +23,31 @@ const Image = styled.div(props => [
   tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`
 ]);
 
-const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
+const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-indigo-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
 const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
-  ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
+  ${tw`text-blue-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
   svg {
     ${tw`w-4 h-4 mr-1`}
   }
 `;
 
 const Title = tw.h5`mt-4 leading-snug font-bold text-lg`;
-const Description = tw.p`mt-2 text-sm text-secondary-100`;
+const Description = tw.p`mt-2 text-sm text-blue-100`;
 const Link = styled(PrimaryButtonBase).attrs({as: "a"})`
   ${tw`inline-block mt-4 text-sm font-semibold`}
 `
 
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
-)`-z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
+)`z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
 const DecoratorBlob2 = tw(
   SvgDecoratorBlob2
-)`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
+)`z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
 export default ({
   subheading = "Blog",
-  heading = <>We Love <span tw="text-primary-500">Writing.</span></>,
+  heading = <>We Love <span tw="text-indigo-500">Writing.</span></>,
   description = "Some amazing blog posts that are written by even more amazing people.",
 
 }) => {
