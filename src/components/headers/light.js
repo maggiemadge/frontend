@@ -21,7 +21,7 @@ export const NavLinks = tw.div`inline-block`;
  * hocus:bg-indigo-700 will apply the bg-indigo-700 class on hover or focus
  */
 export const NavLink = tw.a`
-  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 text-white
   font-semibold tracking-wide transition duration-300
   pb-1 border-b-2 border-transparent hover:border-indigo-500 hocus:text-indigo-500
 `;
