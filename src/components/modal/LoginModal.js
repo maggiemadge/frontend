@@ -14,7 +14,7 @@ const SignUpModal = ({ showModal, setShowModal }) => {
         <>
             <Modal size="regular" active={showModal} toggler={() => setShowModal(false)}>
 
-                <Card>
+                {/* <Card> */}
                     <CardHeader color="lightBlue" size="lg">
                         <H5 color="white">Login</H5>
                     </CardHeader>
@@ -49,7 +49,7 @@ const SignUpModal = ({ showModal, setShowModal }) => {
                             </Button>
                         </div>
                     </CardFooter>
-                </Card>
+                {/* </Card> */}
 
             </Modal>
         </>
